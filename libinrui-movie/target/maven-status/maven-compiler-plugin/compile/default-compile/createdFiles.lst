@@ -1,0 +1,3 @@
+com\bwei\service\MovieService.class
+com\bwei\controller\MovieController.class
+com\bwei\service\MovieServiceImpl.class

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.libinrui.dao.MovieMapperDao">
+
+	<select id="selectMovieList" parameterType="map"
+		resultType="map">
+		SELECT m.*,t.tname FROM movie m
+		LEFT JOIN type t on m.tid=t.tid
+		GROUP BY m.mid
+	</select>
+</mapper>
